@@ -1,0 +1,9 @@
+@extends("application.html")
+
+@def title():
+    Welcome
+@end
+
+@def content():
+
+@end

@@ -1,0 +1,51 @@
+<html>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	
+	<!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    
+
+	<!-- Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+    <head>
+        <title>
+        @def title():
+        @end
+        @title()</title>
+    </head>
+    <body>
+		
+		<!-- This is the nav bar for your project, to add more links just copy and paste one
+			one of li elements below and change the text-->
+		<nav>
+			<div class="nav-wrapper" style="background-color:#333;">
+				<a href="/index" > &nbsp; New Project</a>
+				
+				<ul id="nav-mobile" class="right">
+					<li><a href="/pricing">Getting Started</a></li>
+					<li><a href="/projects">Documentation</a></li>
+					
+				</ul>
+				
+				
+			</div>
+		</nav>
+		
+        <div id="content">
+            @def content():
+            @end
+            @content()
+        </div>
+		<div class="content">
+        <div id="footer">
+            @def footer():
+            &nbsp;Hey look at me im a footer
+            @end
+            @footer()
+        </div>
+		</div>
+    </body>
+</html>
